@@ -1,7 +1,242 @@
-
 * {
  box-sizing: border-box; 
 }
+
+body{
+  font-size: 14px;
+}
+
+.head-menu {
+ 
+  background-color: rgba(122,253,122,.2);
+}
+
+
+
+.main-menu {
+  
+  background-color: rgba(1,1,1,.1);
+}
+
+.inter-menu {
+ 
+  background-color: rgba(76,0,253,.1);
+}
+
+.tools-menu {
+ 
+  background-color: rgba(253,228,1,.2);
+}
+
+.print-menu {
+
+  background-color: rgba(253,135,0,.2);
+}
+
+.lang-menu {
+ 
+  background-color: rgba(253,0,236,.2);
+}
+
+img {
+  
+  background-color: rgba(127,0,233,.2);
+}
+
+.main-article {
+  
+  background-color: rgba(0,228,253,.2);
+}
+
+footer {
+
+  background-color: rgba(0,253,101,.2);
+}
+
+a {
+  text-decoration: none;
+}
+
+.head-menu {
+  position: absolute;
+  width: 90rem;
+  height: 2rem;
+  left: 12rem;
+  top: 1rem;
+  text-align: center;
+}
+
+.head-lists {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.head-btn {
+  float: right;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: .2rem .3rem;
+ }
+
+.side-menu {
+  position: absolute;
+  width: 10rem;
+  height: 100vh;
+  left: 2rem;
+  top: 1rem;
+}
+
+.main-article {
+  position: absolute;
+  width: 90rem;
+  left: 12rem;
+  top: 3rem;
+  border: 1px solid rgba(2,2,2,1);
+}
+
+footer {
+  position: fixed;
+  width: 90rem;
+  height: 10rem;
+  left: 12rem;
+  bottom: 1rem;
+  display: none;
+}
+
+.wiki-logo{
+  width: 10rem;
+}
+
+.side-menu ul{
+  margin: .5rem 0;
+}
+
+.side-menu li{
+  line-height: 1.2rem;
+}
+
+.side-menu p{
+  border-bottom: 1px solid grey;
+}
+
+.lang-menu i {
+  display: block;
+  float: right;
+  z-index: 1;
+}
+
+.side-text {
+  display: block;
+  float: right;
+  z-index: 2;
+}
+
+.main-article {
+  
+ }
+
+.main-btn {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: .2rem .3rem;
+  height: 2rem;
+ }
+
+.head-text, .first-quote, .second-quote, .third-quote, .forth-quote, .fifth-quote, .sixth-quote, .cover-box, .cont-box, .link-box {
+  display: block;
+  position: absolute;
+ }
+
+.head-text {
+  top: 2rem;
+  height: 3rem;
+}
+
+.first-quote {
+  top: 5rem;
+  height: 30rem;
+}
+
+.second-quote {
+  top: 35rem;
+  height: 10rem;
+}
+
+.third-quote {
+  top: 45rem;
+  height: 10rem;
+}
+
+.forth-quote {
+  top: 55rem;
+  height: 10 rem;
+}
+
+
+.fifth-quote {
+  top: 65rem;
+  height: 10rem;
+}
+
+.sixth-quote {
+  top: 75rem;
+  height: 10 rem;
+}
+.cont-box {
+  top: 25rem;
+  height: auto;
+  border: 1px solid rgba(0,0,0,.5);
+}
+
+.cover-box {
+  top: 15rem;
+  left: 55rem;
+  height: auto;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.link-box {
+  top: 100rem;
+  height: auto;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-style: oblique;
+  border-bottom: 1px solid rgba(0,0,0,.3);
+  width: 90rem;
+  margin: 1rem 2rem .3rem 2rem;
+}
+
+h2{
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.third-quote img {
+  width: 120px;
+  height: 120px;
+  border: 1px solid green;
+}
+
+
+
 
 
 
