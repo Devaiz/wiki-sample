@@ -1,17 +1,24 @@
+/* UNIVERSAL STYLE */
+
+
 * {
  box-sizing: border-box; 
 }
 
 body{
   font-size: 14px;
+  width: 100%;
 }
+
+
+a {
+  text-decoration: none;
+}
+
 
 .head-menu {
- 
   background-color: rgba(122,253,122,.2);
 }
-
-
 
 .main-menu {
   
@@ -53,13 +60,14 @@ footer {
   background-color: rgba(0,253,101,.2);
 }
 
-a {
-  text-decoration: none;
-}
+
+
+
+/* HEAD MENU STYLE */
 
 .head-menu {
   position: absolute;
-  width: 90rem;
+  width: 100vw;
   height: 2rem;
   left: 12rem;
   top: 1rem;
@@ -81,29 +89,30 @@ a {
   padding: .2rem .3rem;
  }
 
+
+
+
+
+footer {
+  position: absolute;
+  width: 100vw;
+  height: 10rem;
+  left: 12rem;
+  bottom: 1rem;
+  display: none;
+}
+
+
+
+/* SIDE MENU STYLE */
+
+
 .side-menu {
   position: absolute;
   width: 10rem;
   height: 100vh;
   left: 2rem;
   top: 1rem;
-}
-
-.main-article {
-  position: absolute;
-  width: 90rem;
-  left: 12rem;
-  top: 3rem;
-  border: 1px solid rgba(2,2,2,1);
-}
-
-footer {
-  position: fixed;
-  width: 90rem;
-  height: 10rem;
-  left: 12rem;
-  bottom: 1rem;
-  display: none;
 }
 
 .wiki-logo{
@@ -134,9 +143,9 @@ footer {
   z-index: 2;
 }
 
-.main-article {
-  
- }
+
+/* MAIN MENU STYLE */
+
 
 .main-btn {
   list-style-type: none;
@@ -151,71 +160,20 @@ footer {
   height: 2rem;
  }
 
-.head-text, .first-quote, .second-quote, .third-quote, .forth-quote, .fifth-quote, .sixth-quote, .cover-box, .cont-box, .link-box {
+
+/* MAIN ARTICLE STYLE */
+
+.head-text, .first-quote, .second-quote, .third-quote, .forth-quote, .fifth-quote, .sixth-quote, .cover-box, .ct-box, .link-box {
   display: block;
-  position: absolute;
+  padding: 1rem;
  }
 
-.head-text {
-  top: 2rem;
-  height: 3rem;
-}
-
-.first-quote {
-  top: 5rem;
-  height: 30rem;
-}
-
-.second-quote {
-  top: 35rem;
-  height: 10rem;
-}
-
-.third-quote {
-  top: 45rem;
-  height: 10rem;
-}
-
-.forth-quote {
-  top: 55rem;
-  height: 10 rem;
-}
-
-
-.fifth-quote {
-  top: 65rem;
-  height: 10rem;
-}
-
-.sixth-quote {
-  top: 75rem;
-  height: 10 rem;
-}
-.cont-box {
-  top: 25rem;
-  height: auto;
-  border: 1px solid rgba(0,0,0,.5);
-}
-
-.cover-box {
-  top: 15rem;
-  left: 55rem;
-  height: auto;
-  text-align: center;
-  border: 1px solid black;
-}
-
-.link-box {
-  top: 100rem;
-  height: auto;
-}
-
-h1 {
-  font-size: 1.4rem;
-  font-style: oblique;
-  border-bottom: 1px solid rgba(0,0,0,.3);
-  width: 90rem;
-  margin: 1rem 2rem .3rem 2rem;
+.main-article {
+  position: absolute;
+  width: 100vw;
+  left: 12rem;
+  top: 3rem;
+  border: 1px solid rgba(2,2,2,1);
 }
 
 h2{
@@ -224,18 +182,126 @@ h2{
   border-bottom: 1px solid rgba(0,0,0,.3);
 }
 
+strong {
+  font-weight: 700;
+}
+
+small {
+  font-size: .7rem;
+}
+
+/* HEAD TEXT STYLE */
+
+.head-text {
+  top: 2rem;
+  background: red;
+}
+
+h1 {
+  font-size: 2rem;
+  font-style: oblique;
+  padding-bottom: .15rem;
+  margin-bottom: .3rem;
+  width: auto;
+  border-bottom: 1px solid rgba(0,0,0,.3);
+ }
+
+/*FIRST QUOTE STYLE*/
+
+.first-quote {
+  top: 8rem;
+  width: 100vw;
+}
+
+/*STORY QUOTE STYLE*/
+
+.second-quote {
+  top:  25rem;
+  width: 100vw;
+}
+
+/*GAMEPLAY QUOTE STYLE*/
+
+.third-quote {
+  top: 45rem;
+  height: 10rem;
+}
+
+.link-box {
+  top: 100rem;
+  height: auto;
+}
+
 h4 {
   font-size: 1.1rem;
   font-weight: 700;
 }
 
-.third-quote img {
-  width: 120px;
-  height: 120px;
-  border: 1px solid green;
+
+figure.ct {
+  float: left;
+  border: 1px solid black;
+  width: 11rem;
+  padding: .4rem;
 }
 
+ .ct img{
+  width: 10rem;
+}
+/*4TH QUOTE STYLE*/
 
+.forth-quote {
+  top: 80rem;
+  height: 10 rem;
+}
+
+/*5TH QUOTE STYLE*/
+
+.fifth-quote {
+  top: 90rem;
+  height: 10rem;
+}
+
+/*6TH QUOTE STYLE*/
+
+.sixth-quote {
+  top: 100rem;
+  height: 10 rem;
+}
+
+/*CONTENTS BOX STYLE*/
+
+.ct-box {
+  float: left;
+  width: 9rem;
+  height: auto;
+  border: 1px solid rgba(0,0,0,.5);
+  line-height: 1.2rem;
+  list-style: decimal;
+}
+
+.ct-sidebox {
+  list-style-type: decimal-leading-2;
+}
+
+/*COVER BOX STYLE*/
+
+.cover-box {
+  float: right;
+  width: 15rem;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+.cover img{
+  width: 14rem;
+}
+
+table{
+  width: 100%;
+  text-align: left;
+}
 
 
 
