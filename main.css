@@ -7,7 +7,7 @@
 
 body{
   font-size: 14px;
-  width: 100%;
+  width: 100vw;
 }
 
 
@@ -66,12 +66,7 @@ footer {
 /* HEAD MENU STYLE */
 
 .head-menu {
-  position: absolute;
-  width: 100vw;
-  height: 2rem;
-  left: 12rem;
-  top: 1rem;
-  text-align: center;
+  padding: 1rem;
 }
 
 .head-lists {
@@ -87,21 +82,7 @@ footer {
   color: blue;
   text-align: center;
   padding: .2rem .3rem;
- }
-
-
-
-
-
-footer {
-  position: absolute;
-  width: 100vw;
-  height: 10rem;
-  left: 12rem;
-  bottom: 1rem;
-  display: none;
 }
-
 
 
 /* SIDE MENU STYLE */
@@ -111,7 +92,7 @@ footer {
   position: absolute;
   width: 10rem;
   height: 100vh;
-  left: 2rem;
+  left: 1rem;
   top: 1rem;
 }
 
@@ -144,34 +125,15 @@ footer {
 }
 
 
-/* MAIN MENU STYLE */
-
-
-.main-btn {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  float: right;
-  display: block;
-  color: blue;
-  text-align: center;
-  padding: .2rem .3rem;
-  height: 2rem;
- }
-
-
 /* MAIN ARTICLE STYLE */
 
 .head-text, .first-quote, .second-quote, .third-quote, .forth-quote, .fifth-quote, .sixth-quote, .cover-box, .ct-box, .link-box {
-  display: block;
   padding: 1rem;
  }
 
 .main-article {
   position: absolute;
-  width: 100vw;
-  left: 12rem;
+  padding-left: 11rem;
   top: 3rem;
   border: 1px solid rgba(2,2,2,1);
 }
@@ -189,6 +151,25 @@ strong {
 small {
   font-size: .7rem;
 }
+
+/* MAIN MENU STYLE */
+
+.artic-btn {
+  height: 2rem;
+}
+
+.main-btn {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: .2rem .3rem;
+  height: 2rem;
+ }
 
 /* HEAD TEXT STYLE */
 
@@ -209,26 +190,27 @@ h1 {
 /*FIRST QUOTE STYLE*/
 
 .first-quote {
-  top: 8rem;
-  width: 100vw;
+  float: left;
+}
+
+.main-text {
+  margin-right: 16rem;
+  margin-bottom: 2rem;
 }
 
 /*STORY QUOTE STYLE*/
 
 .second-quote {
-  top:  25rem;
-  width: 100vw;
+  float: left;
 }
 
 /*GAMEPLAY QUOTE STYLE*/
 
 .third-quote {
-  top: 45rem;
-  height: 10rem;
+  float: left;
 }
 
 .link-box {
-  top: 100rem;
   height: auto;
 }
 
@@ -248,25 +230,23 @@ figure.ct {
  .ct img{
   width: 10rem;
 }
-/*4TH QUOTE STYLE*/
+/* EASTER EGG QUOTE STYLE*/
 
 .forth-quote {
-  top: 80rem;
-  height: 10 rem;
+  float: left;
 }
 
-/*5TH QUOTE STYLE*/
+/* REFERENCES QUOTE STYLE*/
 
 .fifth-quote {
-  top: 90rem;
-  height: 10rem;
+  float: left;
+  
 }
 
-/*6TH QUOTE STYLE*/
+/* EXTERNAL LINKS QUOTE STYLE*/
 
 .sixth-quote {
-  top: 100rem;
-  height: 10 rem;
+  float: left;
 }
 
 /*CONTENTS BOX STYLE*/
@@ -277,11 +257,6 @@ figure.ct {
   height: auto;
   border: 1px solid rgba(0,0,0,.5);
   line-height: 1.2rem;
-  list-style: decimal;
-}
-
-.ct-sidebox {
-  list-style-type: decimal-leading-2;
 }
 
 /*COVER BOX STYLE*/
@@ -292,6 +267,7 @@ figure.ct {
   border: 1px solid black;
   text-align: center;
   line-height: 1.6rem;
+  z-index:  0;
 }
 
 .cover img{
@@ -304,5 +280,23 @@ table{
 }
 
 
+/* LINK BOX STYLE */
+
+.link-box {
+  float:left;
+  list-style-type: none;
+  margin: 0;
+  padding: 1;
+  overflow: hidden;
+}
 
 
+/*FOOTER STYLE*/
+
+footer {
+  position: absolute;
+  height: 10rem;
+  padding-left: 11rem;
+  bottom: 1rem;
+  display: none;
+}
