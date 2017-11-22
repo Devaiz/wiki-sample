@@ -136,6 +136,7 @@ footer {
   padding-left: 11rem;
   top: 3rem;
   border: 1px solid rgba(2,2,2,1);
+  line-height: 1.2rem;
 }
 
 h2{
@@ -185,31 +186,36 @@ h1 {
   margin-bottom: .3rem;
   width: auto;
   border-bottom: 1px solid rgba(0,0,0,.3);
+  z-index: 1;
  }
 
 /*FIRST QUOTE STYLE*/
 
 .first-quote {
   float: left;
+  z-index: 1;
 }
 
 .main-text {
   margin-right: 16rem;
   margin-bottom: 2rem;
+  z-index: 1;
 }
 
 /*STORY QUOTE STYLE*/
-
+/*
 .second-quote {
   float: left;
-}
+  z-index: 1;
+}*/
 
 /*GAMEPLAY QUOTE STYLE*/
-
+/*
 .third-quote {
   float: left;
+  z-index: 1;
 }
-
+*/
 .link-box {
   height: auto;
 }
@@ -234,19 +240,21 @@ figure.ct {
 
 .forth-quote {
   float: left;
+  z-index: 1;
 }
 
 /* REFERENCES QUOTE STYLE*/
 
 .fifth-quote {
   float: left;
-  
+  z-index: 1;
 }
 
 /* EXTERNAL LINKS QUOTE STYLE*/
 
 .sixth-quote {
   float: left;
+  z-index: 1;
 }
 
 /*CONTENTS BOX STYLE*/
@@ -258,6 +266,13 @@ figure.ct {
   border: 1px solid rgba(0,0,0,.5);
   line-height: 1.2rem;
 }
+.ct-sidebox {
+  text-indent: 1rem;
+}
+
+.ct-box p {
+  margin-bottom: .5rem;
+}
 
 /*COVER BOX STYLE*/
 
@@ -267,7 +282,7 @@ figure.ct {
   border: 1px solid black;
   text-align: center;
   line-height: 1.6rem;
-  z-index:  0;
+  z-index: 1;
 }
 
 .cover img{
