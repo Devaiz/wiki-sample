@@ -192,30 +192,52 @@ h1 {
 /*FIRST QUOTE STYLE*/
 
 .first-quote {
-  float: left;
-  z-index: 1;
+  
 }
 
 .main-text {
   margin-right: 16rem;
   margin-bottom: 2rem;
-  z-index: 1;
+}
+
+/*COVER BOX STYLE*/
+
+.cover-box {
+  float: right;
+  width: 15rem;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+.cover img{
+  width: 14rem;
+}
+
+table{
+  width: 100%;
+  text-align: left;
+}
+
+.cover-box::after{
+  content: "";
+  display: block;
+  clear: right;
 }
 
 /*STORY QUOTE STYLE*/
-/*
+
 .second-quote {
-  float: left;
-  z-index: 1;
-}*/
+  margin-right: 16rem;
+  
+}
 
 /*GAMEPLAY QUOTE STYLE*/
-/*
-.third-quote {
-  float: left;
-  z-index: 1;
+
+.third-quote h2 {
+ width: 75%;
 }
-*/
+
 .link-box {
   height: auto;
 }
@@ -239,28 +261,26 @@ figure.ct {
 /* EASTER EGG QUOTE STYLE*/
 
 .forth-quote {
-  float: left;
-  z-index: 1;
+ 
 }
 
 /* REFERENCES QUOTE STYLE*/
 
 .fifth-quote {
-  float: left;
-  z-index: 1;
+  
+  
 }
 
 /* EXTERNAL LINKS QUOTE STYLE*/
 
 .sixth-quote {
-  float: left;
+  
   z-index: 1;
 }
 
 /*CONTENTS BOX STYLE*/
 
 .ct-box {
-  float: left;
   width: 9rem;
   height: auto;
   border: 1px solid rgba(0,0,0,.5);
@@ -272,26 +292,6 @@ figure.ct {
 
 .ct-box p {
   margin-bottom: .5rem;
-}
-
-/*COVER BOX STYLE*/
-
-.cover-box {
-  float: right;
-  width: 15rem;
-  border: 1px solid black;
-  text-align: center;
-  line-height: 1.6rem;
-  z-index: 1;
-}
-
-.cover img{
-  width: 14rem;
-}
-
-table{
-  width: 100%;
-  text-align: left;
 }
 
 
