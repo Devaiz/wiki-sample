@@ -10,11 +10,15 @@ body{
   width: 100vw;
 }
 
-
 a {
   text-decoration: none;
 }
 
+.ref-number {
+  font-size: .6rem;
+  vertical-align: super;
+    
+}
 
 .head-menu {
   background-color: rgba(122,253,122,.2);
@@ -66,7 +70,9 @@ footer {
 /* HEAD MENU STYLE */
 
 .head-menu {
-  padding: 1rem;
+  margin-left: 11rem;
+  line-height: 2rem;
+  margin-right: 1rem,
 }
 
 .head-lists {
@@ -127,15 +133,16 @@ footer {
 
 /* MAIN ARTICLE STYLE */
 
-.head-text, .first-quote, .second-quote, .third-quote, .forth-quote, .fifth-quote, .sixth-quote, .cover-box, .ct-box, .link-box {
+.head-text, .first-quote, .second-quote, .third-quote, .forth-quote, .fifth-quote, .sixth-quote, .cover-box, .ct-box {
   padding: 1rem;
  }
 
 .main-article {
   position: absolute;
-  padding-left: 11rem;
+  margin-left: 11rem;
   top: 3rem;
-  border: 1px solid rgba(2,2,2,1);
+  border-left: 1px solid rgba(2,2,2,1);
+  border-bottom: 1px solid rgba(2,2,2,1);
   line-height: 1.2rem;
 }
 
@@ -143,6 +150,7 @@ h2{
   font-size: 1.25rem;
   font-weight: 700;
   border-bottom: 1px solid rgba(0,0,0,.3);
+  margin-bottom: 1rem;
 }
 
 strong {
@@ -208,10 +216,11 @@ h1 {
   border: 1px solid black;
   text-align: center;
   line-height: 1.6rem;
+  margin-left: 1rem;
 }
 
 .cover img{
-  width: 14rem;
+  width: 13rem;
 }
 
 table{
@@ -219,11 +228,7 @@ table{
   text-align: left;
 }
 
-.cover-box::after{
-  content: "";
-  display: block;
-  clear: right;
-}
+
 
 /*STORY QUOTE STYLE*/
 
@@ -253,6 +258,7 @@ figure.ct {
   border: 1px solid black;
   width: 11rem;
   padding: .4rem;
+  margin-right: 1rem;
 }
 
  .ct img{
@@ -266,16 +272,16 @@ figure.ct {
 
 /* REFERENCES QUOTE STYLE*/
 
-.fifth-quote {
-  
+.fifth-quote li {
+  text-indent: 1rem;
   
 }
 
 /* EXTERNAL LINKS QUOTE STYLE*/
 
-.sixth-quote {
-  
-  z-index: 1;
+.sixth-quote li {
+  list-style-type: disc;
+  margin-left: 1.5rem;
 }
 
 /*CONTENTS BOX STYLE*/
@@ -315,3 +321,14 @@ footer {
   bottom: 1rem;
   display: none;
 }
+
+
+/* LINK BOX STYLE */
+
+.link-box {
+  border: 1px solid rgba(2,2,2,1);
+  line-height: 1.6rem;
+  padding: 0 1rem 0 1rem;
+  margin-left: 1rem;
+}
+
